@@ -42421,8 +42421,8 @@ textarea.form-control {
 }
 
 .social-icons-list li a:hover {
-  background-color: #4252f9;
-  color: #ffffff;
+  background-color: #f1d4a2;
+  /*color: #ffffff;*/
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
@@ -44116,13 +44116,13 @@ textarea.form-control {
   color: #022334;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e4efff;
+  background-color: #f4deb9;
   border-radius: 50%;
 }
 
 .social-icons-list li a:hover {
-  background-color: #4252f9;
-  color: #fff;
+  background-color: #f1d4a2;
+  /*color: #fff;*/
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
