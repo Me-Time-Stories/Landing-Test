@@ -58,6 +58,7 @@
             </div>
         </div>
     </section>
+
     <section class="align-items-center bg-home" id="our-stories" style="background: #fbf1e2;">
         <div class="container">
             <div class="row align-items-center">
@@ -82,91 +83,76 @@
             </div>
         </div>
     </section>
+
+    <!-- New Generate Your Story Section -->
+    <section class="align-items-center bg-home" id="generate-your-story" style="background: #fef1e6; padding: 50px 0;">
+        <div class="container">
+            <h2 class="text-center" style="font-family: 'Fredoka One', serif; color: #333;">Enter Details to Generate Your Story</h2>
+            <div class="form-container" style="background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); max-width: 550px; margin: 0 auto;">
+                <form action="generate-story.html" method="POST" enctype="multipart/form-data">
+                    <input type="text" name="child_name" placeholder="Child's Name" class="form-control" required style="margin: 10px 0; border-radius: 25px;" />
+
+                    <select name="gender" class="form-control" required style="margin: 10px 0; border-radius: 25px;">
+                        <option value="">Gender:</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+
+                    <input type="text" name="parent1" placeholder="Parent 1" class="form-control" style="margin: 10px 0; border-radius: 25px;" />
+                    <input type="text" name="parent2" placeholder="Parent 2" class="form-control" style="margin: 10px 0; border-radius: 25px;" />
+                    <input type="text" name="uncle" placeholder="Uncle's Name" class="form-control" style="margin: 10px 0; border-radius: 25px;" />
+                    <input type="text" name="teddy" placeholder="Teddy's Name" class="form-control" style="margin: 10px 0; border-radius: 25px;" />
+
+                    <label for="image-upload" style="margin-top: 15px;">Upload Character Image:</label>
+                    <input type="file" id="image-upload" name="character_image" class="form-control" accept="image/*" style="margin: 10px 0; border-radius: 25px;" />
+
+                    <p class="text-center" style="margin: 15px 0;">Or choose a character:</p>
+                    <div class="character-select text-center" style="display: flex; justify-content: center; gap: 10px;">
+                        <label class="character-option">
+                            <input type="radio" name="default_character" value="ronan" />
+                            <img src="images/ronan.jpg" alt="Ronan" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%; border: 2px solid transparent; transition: border-color 0.3s ease;" />
+                            <div>Ronan</div>
+                        </label>
+                        <label class="character-option">
+                            <input type="radio" name="default_character" value="rose" />
+                            <img src="images/rose.jpg" alt="Rose" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%; border: 2px solid transparent; transition: border-color 0.3s ease;" />
+                            <div>Rose</div>
+                        </label>
+                        <label class="character-option">
+                            <input type="radio" name="default_character" value="tyler" />
+                            <img src="images/tyler.jpg" alt="Tyler" style="width: 70px; height: 70px; object-fit: cover; border-radius: 50%; border: 2px solid transparent; transition: border-color 0.3s ease;" />
+                            <div>Tyler</div>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="background-color: #ffa726; color: white; border: none; width: 100%; padding: 14px; border-radius: 25px; font-size: 16px; margin-top: 15px; transition: background-color 0.3s ease;">Generate Story</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section class="align-items-center" id="our-mission" style="padding: 100px 0px;background: #fbf1e2;">
         <div class="container">
             <div class="row flex-row-reverse align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-5 text-center">
                     <div class="home-contact mt-4">
-                        <h1 id="personalisation" class="home-title mt-3" style="font-family: 'Fredoka One', serif;"><strong><span style="color: rgb(14, 16, 26); background-color: transparent;">The Power of MeTime Personalisation</span></strong></h1>
-                        <p class="text-muted mt-4" style="font-size: 19px;color: rgb(95,142,214);color: #2c3740;"><span style="color: rgb(14, 16, 26); background-color: transparent;">Research shows that personalisation in children's storybooks aids in literacy development, which in turn helps kids grow into confident and eager readers.</span><br></p>
-                        <p class="text-muted mt-4" style="font-size: 19px;color: rgb(95,142,214);color: #2c3740;"><span style="color: rgb(14, 16, 26); background-color: transparent;">Living out their wildest dreams on paper and relating to their personalised avatars makes children more receptive to the critical teachings of each tale they read — whether it be bravery, companionship, kindness, or curiosity.&nbsp;&nbsp;</span><br></p>
-                        <p class="text-muted mt-4" style="font-size: 19px;color: rgb(95,142,214);color: #2c3740;"><span style="color: rgb(14, 16, 26); background-color: transparent;">MeTime Stories offers a level of storybook personalisation unlike any other. We don't stop at eye colour and hairstyle. Children use our story customisation tool to bring their avatars to life, letting their imaginations run wild across a series of stories.</span><br></p>
-                        <div class="mt-4 pt-3"></div>
-                        <div class="watch-video pt-5"><a class="video-play-icon text-white" href=""></a></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xxl-4">
-                    <div class="mt-4">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div><img class="img-fluid" src="/assets/img/images/sdfsd.svg?h=89784f3c943da57641feeceeb8024978" alt="" width="457" height="457"></div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
+                        <h1 class="home-title mt-3" style="font-family: 'Fredoka One', serif;">Our Mission<br></h1>
+                        <p class="text-muted mt-4" style="font-size: 19px;">We believe that children can be inspired by the stories they read, helping them to express their imaginations, values, and creativity. Join us in bringing stories that matter, from your heart to theirs.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="flex-row-reverse align-items-center" id="about-us" style="margin: 0px 0px;padding: 100px 0px;border-color: rgb(0,0,0);background: #fbf1e2;">
-        <div class="container">
-            <div class="row flex-row align-items-center">
-                <div class="col-lg-6" id="goal">
-                    <div class="home-contact mt-4">
-                        <h1 class="home-title mt-3" style="font-family: 'Fredoka One', serif;"><strong><span style="color: rgb(14, 16, 26); background-color: transparent;">Our Goal</span></strong></h1>
-                        <p class="text-muted mt-4" style="font-size: 19px;"><span style="color: rgb(14, 16, 26); background-color: transparent;">It's our mission to ignite a passion for reading among today's youth with personalised children's stories. We want to enable your kids to explore fictional worlds with personal avatars. From reliving past experiences to exploring different cultures to saving the day as a superhero, we aim to engage child readers like never before.</span></p>
-                        <div class="mt-4 pt-3"></div>
-                        <div class="watch-video pt-5"><a class="video-play-icon text-white" href=""></a></div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="mt-4">
-                        <div class="swiper-container">
-                            <div class="text-center d-lg-flex justify-content-lg-end swiper-wrapper" style="text-align: right;">
-                                <div class="text-start"><img class="img-fluid" src="/assets/img/images/aaaaa.svg?h=065976f45097eba83f6590f5aca1f619" alt="" width="422" height="320"></div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <!-- Footer -->
+    <footer style="background: #333; color: white; padding: 20px;">
+        <div class="container text-center">
+            <p>&copy; 2025 MeTime Stories. All rights reserved.</p>
         </div>
-    </section>
-    <section class="bg-light section pb-5" style="background-color: #f8e7ce !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer-info mt-4">
-                        <h5 class="f-18 mt-4 pt-1 line-height_1_6">Bringing the joy of reading back into the home with custom storybooks made just for you and your loved ones&nbsp;</h5>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="row"></div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="mt-4 pl-0 pl-lg-4">
-                        <h5 class="f-18">Follow Us</h5>
-                        <ul class="list-inline social-icons-list pt-3">
-                            <li class="list-inline-item list-inline-item" href=""><a class="mdi mdi-facebook" href="https://www.facebook.com/profile.php?id=100089581993342&amp;is_tour_dismissed=true"></a></li>
-                            <li class="list-inline-item list-inline-item" href=""><a class="mdi mdi-twitter" href="https://twitter.com/MeTimeStories_"></a></li>
-                            <li class="list-inline-item list-inline-item" href=""><a class="mdi mdi-linkedin" href="https://www.linkedin.com/in/metimestories-metimestories-9b77b6262/"></a></li>
-                            <li class="list-inline-item list-inline-item"><i href=""></i><a class="mdi mdi-instagram" href="https://www.instagram.com/metimestories_/"></a></li>
-                        </ul>
-                        <div class="mt-4"><a href="" class="pr-3"></a><a href=""></a></div>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <p class="text-muted mb-0">2023 © MeTime Stories</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><script src="js/jquery.min.js"></script><script src="js/bootstrap.bundle.min.js"></script><script src="js/jquery.easing.min.js"></script><script src="js/scrollspy.min.js"></script><script src="js/ion.rangeSlider.min.js"></script><script src="js/jquery.magnific-popup.min.js"></script><script src="js/isotope.js"></script><script src="js/counter.init.js"></script><script src="js/swiper.min.js"></script><script src="js/jquery.flexslider-min.js"></script><script src="js/jquery.mb.YTPlayer.js"></script><script src="js/contact.init.js"></script><script src="js/app.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap.min.js?h=981245863c383366a329259d02b8172c"></script>
+    </footer>
+
+    <script src="/assets/js/bootstrap.bundle.min.js?h=d3fa8d4d01f97c4081e9f82ea85f0cc5"></script>
 </body>
 
 </html>
